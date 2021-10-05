@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+    font-family: Poppins;
+}
+.main_body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(0, 9, 39);
+    display: flex;
+}
+.work_place{
+    height: 70vh;
+    width: 80vw;
+    background-color: #ffffff;
+    margin: auto;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 20px rgba(29, 172, 255, 0.452);
+    display: flex;
+    overflow: hidden;
+}
+.work_place  div.form_area{
+    flex-basis: 40%;
+}
+.work_place  div.content_area{
+    flex-basis: 60%;
+}
+.content_area{
+    background-color: #336dff;
+    overflow-y: scroll;
+    padding: 10px;
+}
+.form_area{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form_area form{
+    display: flex;
+    flex-direction: column;
+}
+.form_area form .input_group{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.form_area form .input_group input{
+    padding: 10px;
+    font-family: Poppins;
+    font-size: 20px;
+}
+.submit_btn{
+    padding: 15px;
+    margin: 30px 0px;
+    font-family: Poppins;
+    border: none;
+    background-color: #336dff;
+    color: white;
+    cursor: pointer;
+}
+.task_card{
+    background-color: white;
+    margin: 15px;
+    border-radius: 4px;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.task_card h1{
+    font-size: 25px;
+    font-weight: 500;
+}
+.task_card h2:nth-child(2){
+    text-align: center;
+}
+.task_card h3{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+.task_card.top{
+    font-size: 10px;
+    font-weight: 400;
+}
+.task_remove_btn{
+    border: none;
+    background-color: #ff273a;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.task_card.modal{
+    justify-content: center;
+    padding: 10px !important;
+    background-color: #00ba36;
+}
+.task_card.modal.remove{
+    justify-content: center;
+    padding: 10px !important;
+    background-color: #ff273a;
+}
+.task_card.modal h4{
+    margin: 5px;
+    color: white;
+}
+.task_card.modal.remove h4{
+    margin: 5px;
+    color: white;
+}
+#warning{
+    color: #ff273a;
+    display: none;
+}
